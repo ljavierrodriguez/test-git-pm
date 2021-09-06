@@ -13,6 +13,10 @@
     $ git add .
     $ git add *
 
+### Retroceder archivos preparados (staged)
+    $ git remove --cached <file>
+    $ git restore --staged index.html
+
 ### Guardar archivos en el repositorio
 
     # me abre un editor
@@ -37,3 +41,25 @@
 ### Mostrar historial de Commits
 
     $ git log
+
+### Retroceder Cambios
+
+    $ git restore <file>
+
+
+### Añadir repositorio remoto
+
+    # git remote add origin https://github.com/<username>/<repositorio>
+    $ git remote add <name> <url>
+
+### Actualizar repositorio remoto
+
+    $ git remote rm <name>
+    $ git remote set-url <name> <url>
+
+    # git remote set-url origin https://....
+
+### subir cambios a mi repositorio remoto
+
+    $ git push <name> <branch>
+    # git push origin master
